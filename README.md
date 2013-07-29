@@ -1,7 +1,7 @@
 This is the data for my personal website
 ========================================
 
-This is the github version of my personal portfolio I have from 2000.
+This is the github version of my personal portfolio I have from 2005.
 
 It is automatically transformed by Jekyll into a static site whenever I push this repository to GitHub.
 
