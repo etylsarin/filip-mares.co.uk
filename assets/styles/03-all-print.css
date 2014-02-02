@@ -1,0 +1,16 @@
+/* =============================================================================
+   Print styles - Base styles for printing devices
+   ========================================================================== */
+
+@page {
+	width: 100%;
+	margin: 2.2cm 1.5cm;
+}
+body {
+	font-size: 9pt;
+	line-height: 1.3em;
+}
+h1, h2, h3, h4 {
+	page-break-after: avoid;
+	clear: left;
+}

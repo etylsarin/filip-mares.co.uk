@@ -1,0 +1,10 @@
+/* =============================================================================
+   Fonts - Embeded web fonts and fonts usage declarations
+   ========================================================================== */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Crimson Text', serif;
+}

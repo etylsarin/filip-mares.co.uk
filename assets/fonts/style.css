@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'social-bold';
+	src:url('fonts/social-bold.eot?-bi894m');
+	src:url('fonts/social-bold.eot?#iefix-bi894m') format('embedded-opentype'),
+		url('fonts/social-bold.ttf?-bi894m') format('truetype'),
+		url('fonts/social-bold.woff?-bi894m') format('woff'),
+		url('fonts/social-bold.svg?-bi894m#social-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'social-bold';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.facebook:before {
+	content: "\e600";
+}
+.twitter:before {
+	content: "\e601";
+}

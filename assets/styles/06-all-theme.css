@@ -1,0 +1,26 @@
+/* =============================================================================
+   Theme styles - Specific modules placement styles
+   ========================================================================== */
+
+#about p {
+	margin-right: 133px;
+}
+#about .image {
+	margin: 0;
+	float: right;
+	text-align: right;
+	font-style: italic;
+}
+#about .image figcaption {
+	display: none;
+}
+#work {
+	margin-bottom: 40px;
+}
+.w-portfolio .m-portfolio-item:hover {
+	border-color: transparent;
+}
+#barrandov.w-portfolio .m-portfolio-item {
+	min-height: 600px;
+}
+

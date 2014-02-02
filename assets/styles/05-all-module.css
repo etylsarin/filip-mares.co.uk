@@ -1,0 +1,97 @@
+/* =============================================================================
+   Module styles - Smaller reusable components of a page
+   ========================================================================== */
+
+.m-logo {
+	float: left;
+	margin: 7px 0 3px 20px;
+}
+.m-navigation {
+	float: right;
+	margin-top: 8px;
+}
+.m-navigation li {
+	list-style: none;
+	display: inline-block;
+	font-size: 1.4em;
+	padding-right: 20px;
+}
+.m-parallax {
+	height: 290px;
+	background-attachment: fixed;
+}
+.m-content {
+	font-size: 1.3em;
+}
+.m-content .heading {
+	font-size: 2.8em;
+}
+.m-portfolio-item {
+	overflow: hidden;
+	min-height: 130px;
+	padding-left: 610px;
+	position: relative;
+	border: 1px solid transparent;
+	margin: 30px 0 60px;
+	-webkit-transition: border-color 0.5s ease-in-out;
+	-moz-transition: border-color 0.5s ease-in-out;
+	-o-transition: border-color 0.5s ease-in-out;
+	transition: border-color 0.5s ease-in-out;
+}
+.m-portfolio-item:hover {
+	border-color: #ddd;
+}
+.m-portfolio-item .thumb a:after {
+	content: attr(data-overlay);
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	bottom: -40px;
+	margin: 0 0 0 -62px;
+	padding: 0.4em 1em 0.5em;
+	background: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	color: #111;
+}
+.m-portfolio-item:hover .thumb a:after {
+	display: block;
+	opacity: 1;
+	bottom: 38.5%;
+}
+.m-portfolio-item .thumb img {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.m-portfolio-item:hover .thumb img {
+	opacity: 0.5;
+}
+.m-portfolio-item .heading {
+	font-size: 1.25em;
+	margin: 0.75em 0;
+}
+.m-portfolio-item .thumb, .m-portfolio-item .img {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	width: 550px;
+}
+.m-portfolio-item .img {
+	background: none;
+}
+.m-portfolio-item .img img {
+	margin-bottom: 24px;
+}
+.m-portfolio-item p {
+	margin: 0.5em 0;
+}
+.m-portfolio-item em {
+	color: #666;
+}
