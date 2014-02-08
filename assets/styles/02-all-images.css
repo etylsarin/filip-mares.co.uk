@@ -3,11 +3,8 @@
    ========================================================================== */
 
 #about + .m-parallax {
-	background-image: url('../images/html5.jpg');
+	background-image: url('../images/html-code.jpg');
 }
 #work + .m-parallax {
 	background-image: url('../images/wireframe-sketch.jpg');
-}
-#contact + .m-parallax {
-	background-image: url('../images/html-code.jpg');
 }

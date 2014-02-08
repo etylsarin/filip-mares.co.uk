@@ -59,7 +59,6 @@ Grids		ClassNames with "g-" prefix
 	z-index: 2;
 }
 .w-main {
-	max-width: 1680px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -77,4 +76,5 @@ Grids		ClassNames with "g-" prefix
 .w-footer {
 	padding-top: 60px;
 	margin: 0 auto 30px;
+	border-top: 1px solid #ddd;
 }

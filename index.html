@@ -13,7 +13,15 @@
 	<!-- JS support class on HTML tag -->
 	<script src="assets/scripts/modernizr-2.6.2.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Crimson+Text:400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="assets/styles/styles.css" media="all" />
+	<link rel="stylesheet" href="assets/styles/00-all-base.css" media="all" />
+	<link rel="stylesheet" href="assets/styles/01-all-fonts.css" media="all" />
+	<link rel="stylesheet" href="assets/styles/02-all-images.css" media="all" />
+	<link rel="stylesheet" href="assets/styles/03-all-print.css" media="print" />
+	<link rel="stylesheet" href="assets/styles/04-all-layout.css" media="screen" />
+	<link rel="stylesheet" href="assets/styles/05-all-module.css" media="screen" />
+	<link rel="stylesheet" href="assets/styles/05-desktop-module.css" media="screen" />
+	<link rel="stylesheet" href="assets/styles/06-all-theme.css" media="screen" />
+	<link rel="stylesheet" href="assets/styles/07-all-state.css" media="screen" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
@@ -33,27 +41,48 @@
 	</header>
 	<div class="w-main" role="main">
 		<section class="w-slide m-content" id="about" data-slide="1">
-			<h2 class="heading">About</h2>
-			<div class="g-two-thidrs">
-				<h3>Professional profile</h3>
-				<p>Client-side web developer with a high level of industry knowledge and over 16 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practises. Interested in creating clean and highly maintainable code which works across all browsers and platforms.</p>
-				<h3>Team experiences</h3>
-				<p>Provided leadership to small teams, experienced in working with cross discipline Agile teams, also in the Scrum Master role.</p>
-				<h3>Portfolio</h3>
-				<p>Completed work for major clients across various sectors including British Telecom, Tesco, M&S, Sony, Unilever, Lloyds TSB, Barclays, Oriflame, Garanti Bank, DHL, Datart and Neoluxor.</p>
-				<h3>Website life cycle knowledge</h3>
-				<p>Experienced in every step of website life cycle (planning, analysis, wireframes, design, development, testing, release, maintenance).</p>
-				<h3>Ongoing</h3>
-				<p>Most recently focused on Front End performance optimization, mobile development, RWD and RESS. Passionate about learning new technologies and skills in order to keep up-to-date.</p>
+			<div class="g-full intro-text">
+				<h2 class="heading">About</h2>
+				<div class="g-two-thidrs">
+					<h3 class="subheading">Professional profile</h3>
+					<p>Client-side web developer with a high level of industry knowledge and over 16 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practises. Interested in creating clean and highly maintainable code which works across all browsers and platforms.</p>
+					<h3 class="subheading">Team experiences</h3>
+					<p>Provided leadership to small teams, experienced in working with cross discipline Agile teams, also in the Scrum Master role.</p>
+					<h3 class="subheading">Portfolio</h3>
+					<p>Completed work for major clients across various sectors including British Telecom, Tesco, M&S, Sony, Unilever, Lloyds TSB, Barclays, Oriflame, Garanti Bank, DHL, Datart and Neoluxor.</p>
+					<h3 class="subheading">Website life cycle knowledge</h3>
+					<p>Experienced in every step of website life cycle (planning, analysis, wireframes, design, development, testing, release, maintenance).</p>
+					<h3 class="subheading">Ongoing</h3>
+					<p>Most recently focused on Front End performance optimization, mobile development, RWD and RESS. Passionate about learning new technologies and skills in order to keep up-to-date.</p>
+				</div>
+				<div class="g-third">
+					<figure class="image">
+						<img src="assets/images/filip-mares.jpg" alt="" />
+						<figcaption>Filip Mareš</figcaption>
+					</figure>
+				</div>
 			</div>
-			<div class="g-third">
-				<figure class="image">
-					<img src="assets/images/filip-mares.jpg" alt="" />
-					<figcaption>Filip Mareš</figcaption>
-				</figure>
+			<div class="g-full additional-text">
+				<h2 class="heading">Benefits</h2>
+				<div class="g-quarter">
+					<h3 class="subheading">Punctual</h3>
+					<p>To accomplish different projects I need different time limits, but in any case I meet deadlines. </p>
+				</div>
+				<div class="g-quarter">
+					<h3 class="subheading">Reliable</h3>
+					<p>My reputation is very important to me. I’m always responsible for my job, so you can fully trust me.</p>
+				</div>
+				<div class="g-quarter">
+					<h3 class="subheading">Accurate</h3>
+					<p>As you know, the devil’s in the details. I use all my experience and skills to give the best solution to each task.</p>
+				</div>
+				<div class="g-quarter">
+					<h3 class="subheading">High Quality</h3>
+					<p>I’m constantly striving to improve my skills to give you the best ideas in the shortest time.</p>
+				</div>
 			</div>
 		</section>
-		<div class="g-full m-parallax" data-stellar-background-ratio="0.5"></div>
+		<div class="g-full m-parallax" data-stellar-background-ratio="0.75"></div>
 		<section class="w-slide m-content" id="work" data-slide="2">
 			<h2 class="heading">Work</h2>
 			<div class="g-full">
@@ -290,20 +319,21 @@
 				</article>
 			</div>
 		</section>
-		<div class="g-full m-parallax" data-stellar-background-ratio="0.5"></div>
+		<div class="g-full m-parallax" data-stellar-background-ratio="0.75"></div>
 		<section class="w-slide m-content" id="contact" data-slide="3">
 			<h2 class="heading">Contact</h2>
-			<div class="g-half">
-					<ul id="m-personal-info">
-						<li>Phone: +420 777 116 630</li>
-						<li>E-mail: <a href="mailto:maresf@gmail.com" class="spammask">maresf@gmail.com</a></li>
-						<li>Download my <a href="assets/pdf/cv-filip-mares.pdf" class="popup">curriculum vitae</a> [PDF 62KB]</li>
-					</ul>
-			</div>
-			<div class="g-half">
+			<div class="m-personal-info">
+				<dl>
+					<dt class="phone"><a href="tel:+420777116630" title="Mobile">phone</a></dt><dd>+420 777 116 630</dd>
+					<dt class="email"><a href="mailto:maresf@gmail.com" title="E-mail">email</a></dt><dd>maresf@gmail.com</dd>
+					<dt class="download"><a href="assets/pdf/cv-filip-mares.pdf" title="Download my CV">download</a></dt><dd>my curriculum vitae<br />[PDF 92KB]</dd>
+					<dt class="linkedin"><a href="http://www.linkedin.com/in/filipmares1" title="Linked in">linkedin</a></dt><dd>http://www.linkedin.com/in/filipmares1</dd>
+					<dt class="github"><a href="https://github.com/etylsarin" title="GitHub">github</a></dt><dd>https://github.com/etylsarin</dd>
+					<dt class="jsfiddle"><a href="http://jsfiddle.net/user/etylsarin/" title="JSFiddle">jsfiddle</a></dt><dd>http://jsfiddle.net/user/etylsarin/</dd>
+					<dt class="slideshare"><a href="http://www.slideshare.net/FilipMare" title="SlideShare">slideshare</a></dt><dd>http://www.slideshare.net/FilipMare</dd>
+				</dl>
 			</div>
 		</section>
-		<div class="g-full m-parallax" data-stellar-background-ratio="0.5"></div>
 	</div>
 	<footer class="w-footer" role="contentinfo">
 		<small id="copyright">Copyright &copy; 2005 - 2014, created by <a href="http://www.filip-mares.co.uk/" title="Filip Mareš - Search Engine Optimization (SEO), Search Engine Marketing (SEM), Website Performance Optimization, Accessibility">Filip Mareš</a></small>

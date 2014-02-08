@@ -18,14 +18,61 @@
 }
 .m-parallax {
 	height: 290px;
+	background-color: #eee;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%, auto;
+}
+.m-parallax:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 290px;
+	background: -moz-linear-gradient(top, rgba(17,17,17,0.35) 0%, rgba(17,17,17,0) 5%, rgba(17,17,17,0) 95%, rgba(17,17,17,0.35) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(17,17,17,0.35)), color-stop(5%,rgba(17,17,17,0)), color-stop(95%,rgba(17,17,17,0)), color-stop(100%,rgba(17,17,17,0.35))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(17,17,17,0.35) 0%,rgba(17,17,17,0) 5%,rgba(17,17,17,0) 95%,rgba(17,17,17,0.35) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(17,17,17,0.35) 0%,rgba(17,17,17,0) 5%,rgba(17,17,17,0) 95%,rgba(17,17,17,0.35) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(17,17,17,0.35) 0%,rgba(17,17,17,0) 5%,rgba(17,17,17,0) 95%,rgba(17,17,17,0.35) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(17,17,17,0.35) 0%,rgba(17,17,17,0) 5%,rgba(17,17,17,0) 95%,rgba(17,17,17,0.35) 100%); /* W3C */
 }
 .m-content {
 	font-size: 1.3em;
 }
 .m-content .heading {
 	font-size: 2.8em;
+	line-height: 1.1em;
 }
+.m-content .subheading {
+	margin-top: 0;
+}
+.m-content .intro-text p {
+	margin: 0 133px 30px 0;
+	color: #444;
+}
+.m-content .image {
+	margin: 0;
+	float: right;
+	text-align: right;
+	font-style: italic;
+}
+.m-content .image figcaption {
+	display: none;
+}
+.m-content .additional-text {
+	border-top: 1px solid #ddd;
+}
+.m-content .additional-text .subheading {
+	color: #444;
+}
+.m-content .additional-text p {
+	margin-right: 30px;
+	color: #888;
+}
+
+article:first-child .m-portfolio-item {
+	margin-top: 0;
+}
+
 .m-portfolio-item {
 	overflow: hidden;
 	min-height: 130px;
@@ -93,5 +140,81 @@
 	margin: 0.5em 0;
 }
 .m-portfolio-item em {
-	color: #666;
+	color: #444;
+}
+.m-personal-info {
+	padding-top: 30px;
+	position: relative;
+	min-height: 150px;
+}
+.m-personal-info dl {
+  -webkit-column-count: 7;
+  -moz-column-count: 7;
+  column-count: 7;
+}
+.m-personal-info dt {
+	font-size: 9em;
+	font-weight: normal;
+	line-height: 1em;
+	text-align: center;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.m-personal-info dd {
+	position: absolute;
+	margin: 0 0 0 140px;
+	font-size: 2em;
+	top: 50%;
+	transform: rotate(-30deg);
+	transform-origin: -70px 50%;
+	line-height: 1.1em;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	display: none;
+}
+.m-personal-info dt.phone + dd, .m-personal-info dt.email + dd, .m-personal-info dt.download + dd {
+	display: block;
+}
+.m-personal-info dt:hover + dd {
+	opacity: 1;
+	transform: rotate(0deg);
+}
+.m-personal-info dt:hover {
+	font-size: 10em;
+}
+.m-personal-info a {
+	color: #ddd;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.m-personal-info a:hover, .m-personal-info a:focus {
+	text-decoration: none;
+}
+.m-personal-info .phone a:hover, .m-personal-info .phone a:focus, .m-personal-info .phone + dd {
+	color: #ff851b;
+}
+.m-personal-info .email a:hover, .m-personal-info .email a:focus, .m-personal-info .email + dd {
+	color: #2ecc40;
+}
+.m-personal-info .download a:hover, .m-personal-info .download a:focus, .m-personal-info .download + dd {
+	color: #b10dc9;
+}
+.m-personal-info .linkedin a:hover, .m-personal-info .linkedin a:focus, .m-personal-info .linkedin + dd {
+	color: #1b86bd;
+}
+.m-personal-info .github a:hover, .m-personal-info .github a:focus, .m-personal-info .github + dd {
+	color: #111;
+}
+.m-personal-info .jsfiddle a:hover, .m-personal-info .jsfiddle a:focus, .m-personal-info .jsfiddle + dd {
+	color: #4679bd;
+}
+.m-personal-info .slideshare a:hover, .m-personal-info .slideshare a:focus, .m-personal-info .slideshare + dd {
+	color: #00a7a9;
 }
