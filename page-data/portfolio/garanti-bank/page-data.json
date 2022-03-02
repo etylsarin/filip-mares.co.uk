@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-portfolio-garanti-bank-mdx",
+    "path": "/portfolio/garanti-bank/",
+    "result": {"pageContext":{"frontmatter":{"title":"Garanti Bank","desc":"the second largest private bank in Turkey","category":"front-end development","year":"2008","url":"http://www.garanti.com.tr/","images":["../../images/portfolio/garanti-bank-webdesign.jpg"]}}},
+    "staticQueryHashes": ["24074254","3547161834"]}

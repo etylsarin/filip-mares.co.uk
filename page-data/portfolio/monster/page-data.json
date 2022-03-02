@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-portfolio-monster-mdx",
+    "path": "/portfolio/monster/",
+    "result": {"pageContext":{"frontmatter":{"title":"Monster","desc":"Monster helps employers and candidates find the right fit","category":"front-end development","year":"2014 - 2019","url":"http://www.monster.com/","images":["../../images/portfolio/monster-jobs-search.jpg"]}}},
+    "staticQueryHashes": ["24074254","3547161834"]}
