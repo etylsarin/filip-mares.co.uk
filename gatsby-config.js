@@ -57,9 +57,17 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: `Filip Mareš portfolio`,
+        short_name: `FM portfolio`,
+        description: `Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.`,
+        start_url: `/`,
+        background_color: `#fbfbfb`,
+        theme_color: `#fbfbfb`,
+        display: `standalone`,
         icon: "src/images/icon.png",
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-mdx",
       options: {
