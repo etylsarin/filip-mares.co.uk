@@ -11,6 +11,7 @@ export const PageLayout = ({ children }) => {
   return (
     <>
       <Helmet
+        htmlAttributes={{ lang: 'en' }}
         title={TITLE}
         meta={[
           {
