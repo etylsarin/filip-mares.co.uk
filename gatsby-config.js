@@ -91,5 +91,19 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'G-G2NE0WYE84'
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+        },
+      },
+    },
   ],
 }

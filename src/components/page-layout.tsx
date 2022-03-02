@@ -43,16 +43,6 @@ export const PageLayout = ({ children }) => {
             content: DESC,
           },
         ]}
-        script={[
-          {
-            async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-G2NE0WYE84',
-          },
-          { 
-            type: 'text/javascript', 
-            innerHTML: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "G-G2NE0WYE84");',
-          }
-        ]}
       />
       <div className={styles.page}>
         <header className={styles.header}>
