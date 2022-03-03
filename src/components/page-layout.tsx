@@ -3,11 +3,11 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import * as styles from "./page-layout.module.scss";
 
-const currentYear = new Date().getFullYear();
-const TITLE = `Filip Mareš portfolio | selected works 2005 - ${currentYear}`;
-const DESC = 'Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.';
+export const PageLayout = ({ children, pageContext: { frontmatter: { title } } }) => {
+  const currentYear = new Date().getFullYear();
+  const TITLE = `Filip Mareš portfolio | ${title || `selected works 2005 - ${currentYear}`}`;
+  const DESC = 'Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.';  
 
-export const PageLayout = ({ children }) => {
   return (
     <>
       <Helmet

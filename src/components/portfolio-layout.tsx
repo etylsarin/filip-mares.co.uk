@@ -54,7 +54,7 @@ import classNames from 'classnames';
       </div>
     </article>;
   
-  return location ? <PageLayout>{result}</PageLayout> : <Link to={`portfolio/${slug}`} className={styles.link}>{result}</Link>;
+  return location ? <PageLayout pageContext={pageContext}>{result}</PageLayout> : <Link to={`portfolio/${slug}`} className={styles.link}>{result}</Link>;
  };
  
  export default PortfolioLayout;
