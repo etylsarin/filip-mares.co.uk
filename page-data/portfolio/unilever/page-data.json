@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-portfolio-unilever-mdx",
     "path": "/portfolio/unilever/",
     "result": {"pageContext":{"frontmatter":{"title":"Unilever","desc":"owner of many world's consumer product brands","category":"front-end development","year":"2009","url":"http://www.unilever.com/","images":["../../images/portfolio/unilever-corporate-website-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3547161834"]}
+    "staticQueryHashes": ["24074254","3000541721","3547161834"]}

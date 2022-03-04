@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-portfolio-oriflame-mdx",
     "path": "/portfolio/oriflame/",
     "result": {"pageContext":{"frontmatter":{"title":"Oriflame","desc":"International beauty company selling directly to the customer","category":"front-end development","year":"2013 - 2014","url":"http://www.oriflame.com/","images":["../../images/portfolio/oriflame-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3547161834"]}
+    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
