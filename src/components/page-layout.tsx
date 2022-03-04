@@ -1,12 +1,23 @@
 
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 import * as styles from "./page-layout.module.scss";
 
 export const PageLayout = ({ children, pageContext: { frontmatter: { title } } }) => {
+  const { site: { siteMetadata }} = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `);
   const currentYear = new Date().getFullYear();
-  const TITLE = `Filip Mareš portfolio | ${title || `selected works 2005 - ${currentYear}`}`;
-  const DESC = 'Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.';  
+  const TITLE = `${siteMetadata.title} | ${title || `selected works 2005 - ${currentYear}`}`;
+  const DESC = siteMetadata.description;  
 
   return (
     <>

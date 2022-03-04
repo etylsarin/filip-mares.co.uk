@@ -1,7 +1,9 @@
 {
-  "name": "filip-mares-portfolio",
+  "name": "filip-mares.dev",
   "private": true,
-  "description": "Filip Mareš portfolio | selected works 2005 - 2014",
+  "description": "Filip Mareš portfolio",
+  "author": "@etylsarin",
+  "homepage": "https://www.filip-mares.dev/",
   "version": "1.0.0",
   "keywords": [
     "gatsby"

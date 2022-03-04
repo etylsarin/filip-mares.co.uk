@@ -1,11 +1,27 @@
+const pkg = require('./package.json');
+const DESC = `Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.`;
+
 module.exports = {
   siteMetadata: {
-    title: "Filip Mareš portfolio",
-    description: "selected works 2005 - 2014",
-    author: "@etylsarin",
-    siteUrl: "https://www.filip-mares.dev/",
+    title: pkg.description,
+    description: DESC,
+    author: pkg.author,
+    siteUrl: pkg.homepage,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: pkg.description,
+        short_name: pkg.name,
+        description: DESC,
+        start_url: `/`,
+        background_color: `#fbfbfb`,
+        theme_color: `#fbfbfb`,
+        display: `standalone`,
+        icon: "src/images/icon.png",
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-svgr',
@@ -51,20 +67,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        excludes: ["/chapter-*"],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: `Filip Mareš portfolio`,
-        short_name: `FM portfolio`,
-        description: `Full stack web developer with a high level of industry knowledge and over 20 years experience in creating fast, standards-compliant, accessible websites and web applications using current best practices.`,
-        start_url: `/`,
-        background_color: `#fbfbfb`,
-        theme_color: `#fbfbfb`,
-        display: `standalone`,
-        icon: "src/images/icon.png",
+        excludes: ["/sections"],
       },
     },
     `gatsby-plugin-offline`,

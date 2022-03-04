@@ -9,9 +9,7 @@
  import { useStaticQuery, graphql, Link } from "gatsby";
  import { GatsbyImage, getImage } from "gatsby-plugin-image";
  import { PageLayout } from './page-layout';
- 
  import * as styles from "./portfolio-layout.module.scss";
-import classNames from 'classnames';
  
  export const PortfolioLayout = ({ children, pageContext, slug, location }) => {
   const meta = pageContext?.frontmatter || {};
