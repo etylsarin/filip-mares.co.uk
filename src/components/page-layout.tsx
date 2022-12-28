@@ -9,7 +9,8 @@ export const PageLayout = ({
     frontmatter: { title },
   },
 }) => {
-  const canonical = !!window.location.search
+  const isBrowser = typeof window !== "undefined"
+  const canonical = isBrowser && !!window.location.search
   const {
     site: { siteMetadata },
   } = useStaticQuery(graphql`
