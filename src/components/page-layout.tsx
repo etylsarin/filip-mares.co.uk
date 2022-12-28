@@ -1,11 +1,18 @@
+import * as React from "react"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
+import * as styles from "./page-layout.module.scss"
 
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
-import * as styles from "./page-layout.module.scss";
-
-export const PageLayout = ({ children, pageContext: { frontmatter: { title } } }) => {
-  const { site: { siteMetadata }} = useStaticQuery(graphql`
+export const PageLayout = ({
+  children,
+  pageContext: {
+    frontmatter: { title },
+  },
+}) => {
+  const canonical = !!window.location.search
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -14,15 +21,22 @@ export const PageLayout = ({ children, pageContext: { frontmatter: { title } } }
         }
       }
     }
-  `);
-  const currentYear = new Date().getFullYear();
-  const TITLE = `${siteMetadata.title} | ${title || `selected works 2005 - ${currentYear}`}`;
-  const DESC = siteMetadata.description;  
+  `)
+  const currentYear = new Date().getFullYear()
+  const TITLE = `${siteMetadata.title} | ${
+    title || `selected works 2005 - ${currentYear}`
+  }`
+  const DESC = siteMetadata.description
 
   return (
     <>
+      {canonical ? (
+        <Helmet>
+          <link rel="canonical" href={window.location.href.split("?")[0]} />
+        </Helmet>
+      ) : null}
       <Helmet
-        htmlAttributes={{ lang: 'en' }}
+        htmlAttributes={{ lang: "en" }}
         title={TITLE}
         meta={[
           {
@@ -57,24 +71,32 @@ export const PageLayout = ({ children, pageContext: { frontmatter: { title } } }
       />
       <div className={styles.page}>
         <header className={styles.header}>
-          <h1><a href="/">Filip Mareš</a> // web developer</h1>
+          <h1>
+            <a href="/">Filip Mareš</a> // web developer
+          </h1>
           <nav className={styles.navigation}>
             <ul>
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#work">Work</a></li>
-              <li><a href="/#contact">Contact</a></li>
+              <li>
+                <a href="/#about">About</a>
+              </li>
+              <li>
+                <a href="/#work">Work</a>
+              </li>
+              <li>
+                <a href="/#contact">Contact</a>
+              </li>
             </ul>
           </nav>
         </header>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer className={styles.footer}>
-          <small>Copyright © 2005 - {currentYear}, created by Filip Mareš</small>
+          <small>
+            Copyright © 2005 - {currentYear}, created by Filip Mareš
+          </small>
         </footer>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PageLayout;
+export default PageLayout
