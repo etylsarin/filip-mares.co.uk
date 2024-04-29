@@ -8,7 +8,6 @@ import { map, find } from "lodash/fp"
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { PageLayout } from "./page-layout"
 import * as styles from "./portfolio-layout.module.scss"
 
 export const PortfolioLayout = ({ children, pageContext, slug, location }) => {
@@ -77,7 +76,7 @@ export const PortfolioLayout = ({ children, pageContext, slug, location }) => {
   )
 
   return location ? (
-    <PageLayout pageContext={pageContext}>{result}</PageLayout>
+    result
   ) : (
     <Link to={slug} className={styles.link}>
       {result}
