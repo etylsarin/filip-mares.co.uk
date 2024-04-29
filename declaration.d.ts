@@ -1,6 +1,6 @@
-declare module '*.mdx' {
-  let MDXComponent: (props) => JSX.Element;
-  export default MDXComponent;
+declare module "*.mdx" {
+  let MDXComponent: (props) => JSX.Element
+  export default MDXComponent
 }
 
-declare module '*.scss';
+declare module "*.scss"

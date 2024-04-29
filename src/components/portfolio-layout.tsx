@@ -4,18 +4,22 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
- import { map, find } from 'lodash/fp';
- import * as React from "react";
- import { useStaticQuery, graphql, Link } from "gatsby";
- import { GatsbyImage, getImage } from "gatsby-plugin-image";
- import { PageLayout } from './page-layout';
- import * as styles from "./portfolio-layout.module.scss";
- 
- export const PortfolioLayout = ({ children, pageContext, slug, location }) => {
-  const meta = pageContext?.frontmatter || {};
-  const { allMdx: { nodes: data }} = useStaticQuery(graphql`
+import { map, find } from "lodash/fp"
+import * as React from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { PageLayout } from "./page-layout"
+import * as styles from "./portfolio-layout.module.scss"
+
+export const PortfolioLayout = ({ children, pageContext, slug, location }) => {
+  const meta = pageContext?.frontmatter || {}
+  const {
+    allMdx: { nodes: data },
+  } = useStaticQuery(graphql`
     query {
-      allMdx(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}) {
+      allMdx(
+        filter: {internal: {contentFilePath: {regex: "/(portfolio)/"}}}
+      ) {
         nodes {
           frontmatter {
             title
@@ -28,32 +32,57 @@
         }
       }
     }
-  `);
-  const images = location ? find(({ frontmatter: { title } }) => title === meta.title, data)?.frontmatter.images : meta.images;
+  `)
+  const images = location
+    ? find(({ frontmatter: { title } }) => title === meta.title, data)
+        ?.frontmatter.images
+    : meta.images
 
-  const result = 
+  const result = (
     <article className={styles.portfolio}>
       <header>
         <h1>{meta?.title}</h1>
-        <p><em>{meta?.category} / {meta?.year}</em></p>
+        <p>
+          <em>
+            {meta?.category} / {meta?.year}
+          </em>
+        </p>
       </header>
       <figure>
-      {
-        map(image => image ? <GatsbyImage image={getImage(image)} alt={meta?.title || ''} className={styles.image} key={image.childImageSharp?.gatsbyImageData.images.fallback.src} /> : null, location ? images : [images[0]])
-      }
+        {map(
+          image =>
+            image ? (
+              <GatsbyImage
+                image={getImage(image)}
+                alt={meta?.title || ""}
+                className={styles.image}
+                key={image.childImageSharp?.gatsbyImageData.images.fallback.src}
+              />
+            ) : null,
+          location ? images : [images[0]],
+        )}
       </figure>
       <div className={styles.content}>
         <p>{meta?.desc}</p>
         {children}
-        {location ?
-        <p><a href={meta?.url} rel="nofollow">{meta?.url}</a></p>
-        : null
-        }
+        {location ? (
+          <p>
+            <a href={meta?.url} rel="nofollow">
+              {meta?.url}
+            </a>
+          </p>
+        ) : null}
       </div>
-    </article>;
-  
-  return location ? <PageLayout pageContext={pageContext}>{result}</PageLayout> : <Link to={`portfolio/${slug}`} className={styles.link}>{result}</Link>;
- };
- 
- export default PortfolioLayout;
- 
+    </article>
+  )
+
+  return location ? (
+    <PageLayout pageContext={pageContext}>{result}</PageLayout>
+  ) : (
+    <Link to={slug} className={styles.link}>
+      {result}
+    </Link>
+  )
+}
+
+export default PortfolioLayout
