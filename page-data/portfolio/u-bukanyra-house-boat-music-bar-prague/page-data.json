@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-u-bukanyra-house-boat-music-bar-prague-mdx",
-    "path": "/portfolio/u-bukanyra-house-boat-music-bar-prague/",
-    "result": {"pageContext":{"frontmatter":{"title":"U Bukanýra houseboat music bar","desc":"Prague electronic music club","category":"web design / front-end development","year":"2008","url":"http://www.bukanyr.cz/","images":["../../images/portfolio/u-bukanyra-house-boat-music-bar-prague-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-u-bukanyra-house-boat-music-bar-prague-mdx","path":"/portfolio/u-bukanyra-house-boat-music-bar-prague/","result":{"pageContext":{"frontmatter":{"title":"U Bukanýra houseboat music bar","desc":"Prague electronic music club","category":"web design / front-end development","year":"2008","url":"http://www.bukanyr.cz/","images":["../../images/portfolio/u-bukanyra-house-boat-music-bar-prague-webdesign.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}

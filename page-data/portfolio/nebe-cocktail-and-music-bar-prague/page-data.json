@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-nebe-cocktail-and-music-bar-prague-mdx",
-    "path": "/portfolio/nebe-cocktail-and-music-bar-prague/",
-    "result": {"pageContext":{"frontmatter":{"title":"Cocktail and music bar Nebe","desc":"Nebe - Cocktail and music bar in Prague centre","category":"web design / front-end development","year":"2008","url":"http://www.nebepraha.cz/","images":["../../images/portfolio/nebe-cocktail-and-music-bar-prague-kremencova-webdesign.jpg","../../images/portfolio/nebe-cocktail-and-music-bar-prague-celnice-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-nebe-cocktail-and-music-bar-prague-mdx","path":"/portfolio/nebe-cocktail-and-music-bar-prague/","result":{"pageContext":{"frontmatter":{"title":"Cocktail and music bar Nebe","desc":"Nebe - Cocktail and music bar in Prague centre","category":"web design / front-end development","year":"2008","url":"http://www.nebepraha.cz/","images":["../../images/portfolio/nebe-cocktail-and-music-bar-prague-kremencova-webdesign.jpg","../../images/portfolio/nebe-cocktail-and-music-bar-prague-celnice-webdesign.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}

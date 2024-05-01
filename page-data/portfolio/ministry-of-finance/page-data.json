@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-ministry-of-finance-mdx",
-    "path": "/portfolio/ministry-of-finance/",
-    "result": {"pageContext":{"frontmatter":{"title":"Ministry of Finance of the Czech Republic","desc":"Czech government ministry established in 1969","category":"front-end development","year":"2012 - 2013","url":"http://www.mfcr.cz/","images":["../../images/portfolio/ministry-of-finance-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-ministry-of-finance-mdx","path":"/portfolio/ministry-of-finance/","result":{"pageContext":{"frontmatter":{"title":"Ministry of Finance of the Czech Republic","desc":"Czech government ministry established in 1969","category":"front-end development","year":"2012 - 2013","url":"http://www.mfcr.cz/","images":["../../images/portfolio/ministry-of-finance-webdesign.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}

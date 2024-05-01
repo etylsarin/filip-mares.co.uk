@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-bt-consumer-mdx",
-    "path": "/portfolio/bt-consumer/",
-    "result": {"pageContext":{"frontmatter":{"slug":"bt-consumer","title":"BT Consumer","desc":"British Telecom - Global telecommunications services company","category":"front-end development","year":"2010 - 2011","url":"http://www.bt.com/","images":["../../images/portfolio/bt-consumer-webdesign.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-bt-consumer-mdx","path":"/portfolio/bt-consumer/","result":{"pageContext":{"frontmatter":{"slug":"bt-consumer","title":"BT Consumer","desc":"British Telecom - Global telecommunications services company","category":"front-end development","year":"2010 - 2011","url":"http://www.bt.com/","images":["../../images/portfolio/bt-consumer-webdesign.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}

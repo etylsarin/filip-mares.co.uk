@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-barrandov-film-studios-mdx",
-    "path": "/portfolio/barrandov-film-studios/",
-    "result": {"pageContext":{"frontmatter":{"slug":"barrandov-film-studios","title":"Barrandov Studios","desc":"One of the largest and the oldest film studios in Europe","category":"illustrations","year":"2006","url":"http://www.barrandov.com/","images":["../../images/portfolio/barrandov-film-studios-illustration-front.jpg","../../images/portfolio/barrandov-film-studios-illustration-back.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-barrandov-film-studios-mdx","path":"/portfolio/barrandov-film-studios/","result":{"pageContext":{"frontmatter":{"slug":"barrandov-film-studios","title":"Barrandov Studios","desc":"One of the largest and the oldest film studios in Europe","category":"illustrations","year":"2006","url":"http://www.barrandov.com/","images":["../../images/portfolio/barrandov-film-studios-illustration-front.jpg","../../images/portfolio/barrandov-film-studios-illustration-back.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}

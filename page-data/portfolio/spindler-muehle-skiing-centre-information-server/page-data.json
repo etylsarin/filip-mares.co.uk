@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-portfolio-spindler-muehle-skiing-centre-information-server-mdx",
-    "path": "/portfolio/spindler-muehle-skiing-centre-information-server/",
-    "result": {"pageContext":{"frontmatter":{"title":"Spindler Muehle skiing centre","desc":"Information server","category":"web design","year":"2005","url":"http://www.spindleruv-mlyn.cz/","images":["../../images/portfolio/spindler-muehle-skiing-centre-information-server-webdesign-v2.jpg","../../images/portfolio/spindler-muehle-skiing-centre-information-server-webdesign-v1.jpg"]}}},
-    "staticQueryHashes": ["24074254","3000541721","3547161834"]}
+{"componentChunkName":"component---src-pages-portfolio-spindler-muehle-skiing-centre-information-server-mdx","path":"/portfolio/spindler-muehle-skiing-centre-information-server/","result":{"pageContext":{"frontmatter":{"title":"Spindler Muehle skiing centre","desc":"Information server","category":"web design","year":"2005","url":"http://www.spindleruv-mlyn.cz/","images":["../../images/portfolio/spindler-muehle-skiing-centre-information-server-webdesign-v2.jpg","../../images/portfolio/spindler-muehle-skiing-centre-information-server-webdesign-v1.jpg"]}}},"staticQueryHashes":["3000541721","3553913552"],"slicesMap":{}}
